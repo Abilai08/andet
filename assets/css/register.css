@@ -1,0 +1,15 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+
+}
+
+#background{
+	background-color: black;
+    background-image: url(../images/bg.jpeg);
+    background-position: center;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
