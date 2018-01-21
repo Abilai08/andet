@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome to Spotify</title>
+	<title>Welcome to Ändet</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/register.css">
 </head>
 <body>
