@@ -1,14 +1,50 @@
 html, body{
 	padding: 0;
 	margin: 0;
-	height: 80%;
-	
+	height: 100%;
+}
+
+#loginContainer * {
+	color: white;
+	font-family: "Helvetica Neue", "Helvetica", "Arial";
+	font-weight: normal;
+	line-height: 0.5em;
+	box-sizing: border-box;
+}
+#inputContainer {
+	width: 400px;
+	padding: 45px;
+	float: left;
+	border-right: 1px solid #999;
+}
+
+#inputContainer h2{
+	text-align: center;
+}
+
+#inputContainer input[type = 'email'],
+#inputContainer input[type = 'text'],
+#inputContainer input[type = 'password']{
+	display: block;
+	margin: 5px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    height: 27px;
+    line-height: 27px;
+    width: 100%;
+}
+#loginContainer{
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	max-width: 1024px;
 
 }
 
 #background{
 	background-color: black;
-    background-image: url(../images/bg.jpeg);
+    background-image: url(../images/bg.jpg);
     background-position: center;
     display: table;
     height: 100%;
