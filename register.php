@@ -36,7 +36,7 @@
 							<label for="loginPassword">Password</label>
 							<input id="loginPassword" type="password" name="loginPassword"  required>
 						</p>
-							<input class="button" type="submit" name="loginButton">
+							<input class="button" type="submit" value="Log In" name="loginButton">
 							
 					
 				</form>
@@ -84,7 +84,7 @@
 							<label for="password2">Confirm Password</label>
 							<input id="password2" type="password" name="loginPassword2" required>
 						</p>
-							<input class="button" type="submit" name="loginButton2">	
+							<input class="button" type="submit" value="Sign Up" name="loginButton2">	
 				</form>
 			</div>
 		</div>
