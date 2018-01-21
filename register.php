@@ -18,8 +18,29 @@
 <head>
 	<title>Welcome to Ändet</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/register.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/js/register.js"></script>
 </head>
 <body>
+	<?php 
+	if(isset($_POST['loginButton2'])){
+		echo '<script>
+		$(document).ready(function(){
+			$("#loginForm").hide();
+			$("#registerForm").show();
+		});
+			</script>';	}
+	else{
+		echo '<script>
+		$(document).ready(function(){
+			$("#loginForm").show();
+			$("#registerForm").hide();
+		});
+	</script>';
+	}
+	?>
 	<div id="background">
 		<div id="loginContainer">
 			<div id="inputContainer">
@@ -30,7 +51,7 @@
 						<p>
 							<?php echo $account->getError(Constants::$loginFailed); ?>
 							<label for="loginUsername">Username</label>
-							<input id="loginUsername" type="text" name="loginUsername" placeholder="e.g. bartSimpson" required>
+							<input id="loginUsername" type="text" name="loginUsername" placeholder="e.g. bartSimpson" value="<?php getInputValue('loginUsername'); ?>" required>
 						</p>
 						<p>
 							<label for="loginPassword">Password</label>
@@ -38,6 +59,9 @@
 						</p>
 							<input class="button" type="submit" value="Log In" name="loginButton">
 							
+							<div class="hasAccountText">
+								<span id="hideLogin">Don't have an account yet? Sign up here</span>
+							</div>
 					
 				</form>
 
@@ -85,9 +109,22 @@
 							<input id="password2" type="password" name="loginPassword2" required>
 						</p>
 							<input class="button" type="submit" value="Sign Up" name="loginButton2">	
+							<div class="hasAccountText">
+								<a href="#"></a>
+								<span id="hideRegister">Alredy have an account? Login here</span>
+							</div>
 				</form>
 			</div>
+			<div id="loginText">
+				<h1>Get great music now</h1>
+				<h2>Listen to loads of songs for free</h2>
+				<ul>
+					<li>Dicover music you'll fall in love with</li>
+					<li>Create your own playlists</li>
+					<li>Follow artists to keep up to date</li>
+				</ul>
+			</div>
 		</div>
-    </div>
+	</div>
 </body>
 </html>
