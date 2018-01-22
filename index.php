@@ -11,8 +11,20 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-<h1>Success</h1>
+	<div id="nowPlayingBarContainer">
+		<div id = "nowPlayingBar"></div>
+			<div id="nowPlayingLeft">
+				
+			</div>
+			<div id="nowPlayingCenter">
+				
+			</div>
+			<div id="nowPlayingRight">
+				
+			</div>
+	</div>
 </body>
 </html>
